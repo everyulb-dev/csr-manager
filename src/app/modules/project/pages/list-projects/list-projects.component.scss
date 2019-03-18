@@ -1,9 +1,34 @@
 $primary-color: #B63D3B;
+$secondary-color: #F0F0F0;
+
+.project-list-container {
+    margin: 1.5rem;
+}
 
 table {
     width: 100%;
 }
 
+th {
+    background-color: $secondary-color;
+}
+
+.mat-header-cell {
+    font-weight: 600;
+}
+
+.mat-tab-label-container {
+    background-color: $secondary-color;
+}
+
 mat-ink-bar {
+    height: 3px;
     background-color: $primary-color !important;
+}
+
+
+.add-btn {
+    position: absolute;
+    top: 2%;
+    right: 2%;
 }

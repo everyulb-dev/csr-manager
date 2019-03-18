@@ -5,6 +5,7 @@ import { ProjectRoutingModule } from './project-routing.module';
 
 import { MatTableModule } from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
+// import {MatCheckboxModule} from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [ListProjectsComponent],
