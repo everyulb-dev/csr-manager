@@ -29,6 +29,19 @@ mat-ink-bar {
 
 .add-btn {
     position: absolute;
-    top: 2%;
-    right: 2%;
+    top: 5%;
+    right: 5%;
+    z-index: 3;
+    background: none;
+    border: none;
+    font-size: 1.0rem;
+    cursor: pointer;
+}
+
+.stage-btn {
+    background-color: white;
+    border: none;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    padding: 0.5rem 1.0rem;
 }

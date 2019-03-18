@@ -83,6 +83,10 @@ export class ListProjectsComponent implements OnInit {
     console.log(el);
   }
 
+  addProject(): void {
+    console.log('Add project');
+  }
+
 }
 
 interface Project {

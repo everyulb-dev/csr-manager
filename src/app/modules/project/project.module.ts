@@ -13,7 +13,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     CommonModule,
     ProjectRoutingModule,
     MatTableModule,
-    MatTabsModule
+    MatTabsModule,
   ]
 })
 export class ProjectModule { }
