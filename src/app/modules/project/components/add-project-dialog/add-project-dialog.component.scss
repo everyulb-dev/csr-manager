@@ -1,0 +1,35 @@
+.title {
+    color: #B83E3C;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+label {
+    font-size: 0.8rem;
+    color: #565656;
+}
+
+.mat-dialog-actions {
+    display: block;
+}
+
+.btn {
+    background-color: white;
+    border: none;
+    border-radius: 3px; 
+    font-size: 0.8rem;
+    width: 7.859vw;
+    height: 5.46vh;
+    margin-right: 0.8rem;
+    float: right;
+    margin-top: 1.2rem;
+}
+
+.cancel {
+    color: #565656;
+}
+
+.save {
+    color: white;
+    background-color: #2E2E2E;
+}

@@ -1,4 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {MatDialog} from '@angular/material';
+import { AddProjectDialogComponent } from '../../components/add-project-dialog/add-project-dialog.component';
+
 
 @Component({
   selector: 'app-list-projects',
@@ -73,7 +76,7 @@ export class ListProjectsComponent implements OnInit {
     'stage'
   ]
 
-  constructor() { }
+  constructor( public dialog: MatDialog) { }
 
   ngOnInit() {
   }
@@ -85,6 +88,16 @@ export class ListProjectsComponent implements OnInit {
 
   addProject(): void {
     console.log('Add project');
+    const dialogRef =this.dialog.open(AddProjectDialogComponent, {
+      width: '30vw',
+      // height: '64vh',
+      data: {}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('Dialog Closed');
+      console.log(result);
+    })
   }
 
 }
