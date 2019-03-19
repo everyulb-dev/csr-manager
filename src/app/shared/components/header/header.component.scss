@@ -1,0 +1,21 @@
+$primary-text: #B63D3B;
+
+mat-toolbar {
+    background-color: white;
+    display: block;
+}
+
+h4 {
+    color: $primary-text;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.right-menu {
+    float: right;
+}
+
+.bell {
+    background-color: transparent;
+    border: none;
+}

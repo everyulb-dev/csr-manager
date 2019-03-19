@@ -8,6 +8,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatDialogModule} from '@angular/material/dialog';
 import { AddProjectDialogComponent } from './components/add-project-dialog/add-project-dialog.component';
 // import {MatCheckboxModule} from '@angular/material/checkbox';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   declarations: [ListProjectsComponent, AddProjectDialogComponent],
@@ -17,7 +18,8 @@ import { AddProjectDialogComponent } from './components/add-project-dialog/add-p
     ProjectRoutingModule,
     MatTableModule,
     MatTabsModule,
-    MatDialogModule
+    MatDialogModule,
+    SharedModule
   ]
 })
 export class ProjectModule { }
