@@ -12,4 +12,12 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  profileOptions(): void {
+    console.log('Profile Picture');
+  }
+
+  notification(): void {
+    console.log('Notifications');
+  }
+
 }

@@ -1,6 +1,11 @@
 <mat-toolbar>
   <img src="assets/logo.png" alt="" srcset="">
   <div class="right-menu">
-    <button class="bell"><i class="fas fa-bell"></i></button>
+    <button class="bell" (click)="notification()">
+      <i class="fas fa-bell"></i>
+    </button>
+    <img src="https://png.pngtree.com/svg/20170602/b7c3ca6e9e.png" alt="" 
+      class="profile-picture"
+      (click)="profileOptions()">
   </div>
 </mat-toolbar>

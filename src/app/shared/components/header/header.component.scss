@@ -3,6 +3,9 @@ $primary-text: #B63D3B;
 mat-toolbar {
     background-color: white;
     display: block;
+    height: 7.81vh;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    line-height: 7.81vh; 
 }
 
 h4 {
@@ -18,4 +21,14 @@ h4 {
 .bell {
     background-color: transparent;
     border: none;
+    color: #C0C0C0;
+    margin-right: 1.6rem;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    height: 2.0rem;
+    width: 2.0rem;
+    margin-right: 1.8rem;
+    cursor: pointer;
 }
