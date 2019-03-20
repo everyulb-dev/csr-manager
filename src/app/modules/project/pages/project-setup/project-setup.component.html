@@ -6,3 +6,22 @@
     <button class="btn save">save</button>
   </div>
 </mat-toolbar>
+<div class="wrapper"> 
+  <div class="tabs" >
+    <div class="tab-item selected" [routerLink]="['./details']">
+      <p>Project Details</p>
+    </div>
+    <div class="tab-item" [routerLink]="['./milestones']">
+      <p>Milestones & Tasks</p>
+    </div>
+    <div class="tab-item" [routerLink]="['./teams']">
+      <p>Teams</p>
+    </div>
+    <div class="tab-item" [routerLink]="['./summary']">
+      <p>Summary Layout</p>
+    </div>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
