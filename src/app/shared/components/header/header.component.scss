@@ -8,6 +8,10 @@ mat-toolbar {
     line-height: 7.81vh; 
 }
 
+mat-toolbar > img {
+    margin-left: 2.0rem;
+}
+
 h4 {
     color: $primary-text;
     font-size: 1.4rem;

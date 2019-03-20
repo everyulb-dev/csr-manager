@@ -1,0 +1,46 @@
+$primary-text: #B63D3B;
+
+mat-toolbar {
+    margin-top: 2px;
+    background-color: white;
+    display: block;
+    height: 5.72vh;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    line-height: 5.72vh; 
+}
+
+
+mat-toolbar span {
+    color: $primary-text;
+    font-size: 1.0rem;
+    font-weight: 400;
+    margin-left: 2.0rem;
+}
+
+.right-menu {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    float: right;
+}
+
+.btn {
+    background-color: white;
+    border: none;
+    border-radius: 3px; 
+    font-size: 0.8rem;
+    width: 4.5vw;
+    height: 3.64vh;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 1.2rem;
+}
+
+.back {
+    color: #565656;
+}
+
+.save {
+    color: white;
+    background-color: #2E2E2E;
+}
