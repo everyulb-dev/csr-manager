@@ -8,20 +8,20 @@
 </mat-toolbar>
 <div class="wrapper"> 
   <div class="tabs" >
-      <!-- [routerLink]="['./details']" -->
-    <div class="tab-item selected" (click)="goToDetails()">
+    <div class="tab-item" (click)="goToDetails()" 
+      [ngClass]="{'selected' : detailsTab}">
       <p>Project Details</p>
     </div>
-    <!-- [routerLink]="['./milestones']" -->
-    <div class="tab-item" (click)="goToMilestones()">
+    <div class="tab-item" (click)="goToMilestones()" 
+      [ngClass]="{'selected' : milestonesTab}">
       <p>Milestones & Tasks</p>
     </div>
-    <!-- [routerLink]="['./teams']" -->
-    <div class="tab-item" (click)="goToTeams()">
+    <div class="tab-item" (click)="goToTeams()" 
+      [ngClass]="{'selected' : teamsTab}">
       <p>Teams</p>
     </div>
-    <!-- [routerLink]="['./summary']" -->
-    <div class="tab-item" (click)="goToSummary()">
+    <div class="tab-item" (click)="goToSummary()"
+      [ngClass]="{'selected' : summaryTab}">
       <p>Summary Layout</p>
     </div>
   </div>
