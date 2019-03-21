@@ -11,19 +11,22 @@ export class ProjectSetupComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
+    console.log(this.route.snapshot);
   }
 
-  // goToProjectDetails(): void {
-  //   // this.router.navigate(['details'], {relativeTo: this.route});
-  //   this.router.navigate(['../details'], { relativeTo: this.route });
-  //   // this.router.navigateByUrl('project-setup/details')
-  // }
+  goToDetails(): void {
+    this.router.navigate(['./details'], { relativeTo: this.route });
+  }
 
-  // goToMilestones(): void {
-  //   console.log('m');
-  //   // this.router.navigate(['milestones'], {relativeTo: this.route});
-  //   // this.router.navigateByUrl('project-setup/milestones')
-  //   this.router.navigate(['../milestones'], { relativeTo: this.route });
-  // }
+  goToMilestones(): void {
+    this.router.navigate(['./milestones'], { relativeTo: this.route });
+  }
 
+  goToTeams(): void {
+    this.router.navigate(['./teams'], { relativeTo: this.route });
+  }
+
+  goToSummary(): void {
+    this.router.navigate(['./summary'], { relativeTo: this.route });
+  }
 }

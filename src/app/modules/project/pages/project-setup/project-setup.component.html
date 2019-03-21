@@ -8,16 +8,20 @@
 </mat-toolbar>
 <div class="wrapper"> 
   <div class="tabs" >
-    <div class="tab-item selected" [routerLink]="['./details']">
+      <!-- [routerLink]="['./details']" -->
+    <div class="tab-item selected" (click)="goToDetails()">
       <p>Project Details</p>
     </div>
-    <div class="tab-item" [routerLink]="['./milestones']">
+    <!-- [routerLink]="['./milestones']" -->
+    <div class="tab-item" (click)="goToMilestones()">
       <p>Milestones & Tasks</p>
     </div>
-    <div class="tab-item" [routerLink]="['./teams']">
+    <!-- [routerLink]="['./teams']" -->
+    <div class="tab-item" (click)="goToTeams()">
       <p>Teams</p>
     </div>
-    <div class="tab-item" [routerLink]="['./summary']">
+    <!-- [routerLink]="['./summary']" -->
+    <div class="tab-item" (click)="goToSummary()">
       <p>Summary Layout</p>
     </div>
   </div>
