@@ -16,7 +16,6 @@ export class ProjectSetupComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    console.log(this.route.snapshot);
   }
 
   goToDetails(): void {

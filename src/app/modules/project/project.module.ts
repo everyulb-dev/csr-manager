@@ -19,10 +19,11 @@ import { MatDatepickerModule,
   MatFormFieldModule,
   MatInputModule } from '@angular/material';
 import { AddMilestoneDialogComponent } from './components/add-milestone-dialog/add-milestone-dialog.component';
+import { AddTeamMembersDialogComponent } from './components/add-team-members-dialog/add-team-members-dialog.component';
 
 @NgModule({
-  declarations: [ListProjectsComponent, AddProjectDialogComponent, ProjectSetupComponent, ProjectDetailsComponent, MilestonesComponent, TeamsComponent, SummaryComponent, AddMilestoneDialogComponent],
-  entryComponents: [AddProjectDialogComponent, AddMilestoneDialogComponent],
+  declarations: [ListProjectsComponent, AddProjectDialogComponent, ProjectSetupComponent, ProjectDetailsComponent, MilestonesComponent, TeamsComponent, SummaryComponent, AddMilestoneDialogComponent, AddTeamMembersDialogComponent],
+  entryComponents: [AddProjectDialogComponent, AddMilestoneDialogComponent, AddTeamMembersDialogComponent],
   imports: [
     CommonModule,
     ProjectRoutingModule,
