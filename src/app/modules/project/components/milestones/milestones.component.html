@@ -1,4 +1,13 @@
 <div class="wrapper">
   <span *ngIf="milestones.length === 0">You have not added any milestones.</span>
   <button class="btn" (click)="addMilestone()">add milestone</button>
+  <div class="milestone" *ngFor="let m of milestones">
+    <h4>{{ m.name }}</h4>
+    <p>{{ m.description }}</p>
+    <div class="date">
+      <img src="/assets/calendar.svg" alt="">
+      <span>{{ m.completionDate }}</span>
+    </div>
+    <button class="tag">Upcoming</button>
+  </div>
 </div>

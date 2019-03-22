@@ -9,7 +9,14 @@ import { AddMilestoneDialogComponent } from '../add-milestone-dialog/add-milesto
 })
 export class MilestonesComponent implements OnInit {
 
-  milestones : Array<milestone> = [];
+  milestones : Array<milestone> = [
+    {
+      name: 'Project Planning',
+      description: 'Prepare the complete planning documents and get the complete team onboard',
+      completionDate: '30 Mar 2019',
+      isEndOfProject: false
+    }
+  ];
 
   constructor(public dialog: MatDialog) { }
   
@@ -34,6 +41,6 @@ export class MilestonesComponent implements OnInit {
 interface milestone {
   name: string,
   description: string,
-  completionDate: Date,
+  completionDate: string,
   isEndOfProject: boolean
 }
