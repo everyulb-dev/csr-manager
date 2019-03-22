@@ -1,0 +1,24 @@
+.wrapper {
+    height: 100%;
+    background-color: #FAFAFA;
+    padding: 2.0rem;
+}
+
+.wrapper > span {
+    color: #8B8B8B;
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 1.4rem;
+}
+
+.btn {
+    text-transform: uppercase;
+    color: #565656;
+    border: 2px dashed #8B8B8B;
+    border-radius: 3px;
+    background-color: transparent;
+    width: 44.36vw;
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    font-size: 0.8rem;
+}

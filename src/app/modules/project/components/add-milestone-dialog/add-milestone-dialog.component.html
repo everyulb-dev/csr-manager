@@ -1,0 +1,34 @@
+<h1 mat-dialog-title class="title">New Milestone</h1>
+<p class="meta">
+    A milestone defines a point in your project which marks completion of a phase. Describe your milestone inasmuch detail as possible so that it is clear when you add tasks that complete the milestone.
+</p>
+<div class="mat-dialog-content">
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" placeholder="Milestone name">
+    </div>
+    <div class="form-group">
+      <label for="focus-area">Description</label>
+      <textarea class="form-control" rows="3" placeholder="Adding a clear description also helps you define its tasks efficiently"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="start-date" style="display: block;">Anticipated achievement date</label>
+      <mat-form-field>
+        <input matInput [matDatepicker]="endDate" placeholder="MM/DD/YYYY">
+        <mat-datepicker-toggle matSuffix [for]="endDate"></mat-datepicker-toggle>
+        <mat-datepicker #endDate></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        This marks the completion of the project
+      </label>
+    </div>
+  </form>
+</div>
+<div class="mat-dialog-actions">
+  <button type="button" class="btn save">SAVE</button>
+  <button type="button" class="btn cancel">CANCEL</button>
+</div>

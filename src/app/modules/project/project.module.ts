@@ -14,10 +14,15 @@ import { ProjectDetailsComponent } from './components/project-details/project-de
 import { MilestonesComponent } from './components/milestones/milestones.component';
 import { TeamsComponent } from './components/teams/teams.component';
 import { SummaryComponent } from './components/summary/summary.component';
+import { MatDatepickerModule,
+  MatNativeDateModule,
+  MatFormFieldModule,
+  MatInputModule } from '@angular/material';
+import { AddMilestoneDialogComponent } from './components/add-milestone-dialog/add-milestone-dialog.component';
 
 @NgModule({
-  declarations: [ListProjectsComponent, AddProjectDialogComponent, ProjectSetupComponent, ProjectDetailsComponent, MilestonesComponent, TeamsComponent, SummaryComponent],
-  entryComponents: [AddProjectDialogComponent],
+  declarations: [ListProjectsComponent, AddProjectDialogComponent, ProjectSetupComponent, ProjectDetailsComponent, MilestonesComponent, TeamsComponent, SummaryComponent, AddMilestoneDialogComponent],
+  entryComponents: [AddProjectDialogComponent, AddMilestoneDialogComponent],
   imports: [
     CommonModule,
     ProjectRoutingModule,
@@ -25,7 +30,14 @@ import { SummaryComponent } from './components/summary/summary.component';
     MatTabsModule,
     MatDialogModule,
     SharedModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatFormFieldModule,
+    MatInputModule
+  ],
+  providers: [
+    MatDatepickerModule
   ]
 })
 export class ProjectModule { }

@@ -2,23 +2,52 @@
   <form>
     <div class="form-group">
       <label for="name">Name</label>
+      <span class="required">*</span>
       <input type="text" class="form-control" placeholder="Project name">
     </div>
     <div class="form-group">
+      <label for="description">Description</label>
+      <textarea class="form-control" rows="3"></textarea>
+    </div>
+    <div class="form-group">
       <label for="focus-area">Focus Area</label>
+      <span class="required">*</span>
       <select class="form-control">
         <option>Focus Area</option>
       </select>
     </div>
     <div class="form-group">
       <label for="focus-area">Verticle</label>
+      <span class="required">*</span>
       <select class="form-control">
         <option>Verticle</option>
+        <option value="">ABC</option>
       </select>
     </div>
     <div class="form-group">
       <label for="region">Region</label>
+      <span class="required">*</span>
       <input type="text" class="form-control" placeholder="Region">
+    </div>
+    <div class="form-group">
+      <div class="row">
+        <div class="col">
+          <label for="start-date">Planned Start Date</label>
+         <mat-form-field>
+          <input matInput [matDatepicker]="startDate" placeholder="MM/DD/YYYY">
+          <mat-datepicker-toggle matSuffix [for]="startDate"></mat-datepicker-toggle>
+          <mat-datepicker #startDate></mat-datepicker>
+         </mat-form-field>
+        </div>
+        <div class="col">
+          <label for="start-date">Anticipated Completion Date</label>
+          <mat-form-field>
+            <input matInput [matDatepicker]="endDate" placeholder="MM/DD/YYYY">
+            <mat-datepicker-toggle matSuffix [for]="endDate"></mat-datepicker-toggle>
+            <mat-datepicker #endDate></mat-datepicker>
+          </mat-form-field>
+        </div>
+      </div>
     </div>
   </form>
 </div>

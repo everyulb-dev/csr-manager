@@ -1,4 +1,27 @@
 .wrapper {
     background-color: #FAFAFA;
     padding: 2.0rem;
+    height: 100%;
+}
+
+form {
+    width: 32.50vw;
+    height: 5.46vh;
+}
+
+label {
+    font-size: 0.8rem;
+    color: #565656;
+}
+
+textarea {
+    width: 32.50vw;
+}
+
+.required {
+    color: #D10000;
+}
+
+.form-group {
+    margin-bottom: 1.4rem;
 }
