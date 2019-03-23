@@ -1,11 +1,22 @@
+.mat-dialog-container {
+    padding: 0px !important;
+}
+
 .title {
     color: #B83E3C;
     font-size: 1.2rem;
     font-weight: bold;
     border-bottom: 1px solid #E0E0E0;
+    padding: 1.2rem 1.3rem;
+    margin-bottom: 0px;
 }
+
 .mat-dialog-actions {
     display: block;
+}
+
+.search-box {
+    padding: 0rem 1.0rem;
 }
 
 .btn {
@@ -15,9 +26,11 @@
     font-size: 0.8rem;
     width: 7.859vw;
     height: 5.46vh;
-    margin-right: 0.8rem;
+    margin-right: 1.0rem;
     float: right;
     margin-top: 1.2rem;
+    margin-bottom: 1.5rem;
+     
 }
 
 img {
@@ -40,4 +53,64 @@ input {
 .save {
     color: white;
     background-color: #2E2E2E;
+}
+
+p {
+    margin: 0px;
+}
+
+.members {
+    max-height: 50vh;
+    overflow: auto;
+}
+
+.member {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    padding: 1.0rem;
+    background-color: #F0F0F0;
+    
+    input {
+        height: 1.0rem;
+        width: 1.0rem;
+        display: inline-block;
+        align-self: center;
+    }
+
+    .profile {
+        margin-left: 0.5rem;
+        display: flex;
+        align-content: center;
+        flex-direction: row;
+        img {
+            width: 2.0rem;
+            height: 2.0rem;
+            margin-right: 0.5rem;
+        }
+        .member-info {
+            h4 {
+                font-size: 0.8rem;
+                color: #565656;
+                margin-bottom: 0.1rem;
+            }
+            
+            p {
+                font-size: 0.8rem;
+                color: #8B8B8B;
+            }
+        }
+    }
+
+    .ongoing-projects {
+        align-self: center;
+        flex: 50%;
+        p {
+            float: right;
+            margin-right: 2.5rem;
+            font-size: 0.8rem;
+            color: #565656;
+        }
+    }
+
 }

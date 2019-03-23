@@ -5,8 +5,18 @@
     <input type="text" placeholder="Search">
   </div>
   <div class="members">
-    <div class="member">
-      
+    <div class="member" *ngFor="let member of members">
+      <input type="checkbox" class="checkbox">
+      <div class="profile">
+        <img [src]="member.image" alt="">
+        <div class="member-info">
+          <h4>{{member.name}}</h4>
+          <p>{{member.email}}</p>
+        </div>
+      </div>
+      <div class="ongoing-projects">
+          <p>{{ member.ongoingProjects}} Ongoing Projects</p>
+      </div>
     </div>
   </div>
 </div>

@@ -17,7 +17,8 @@ export class TeamsComponent implements OnInit {
   addTeamMembers(): void {
     console.log('Add milestone');
     const dialogRef = this.dialog.open(AddTeamMembersDialogComponent, {
-      width: '35.72vw',
+      panelClass: 'custom-mat-dialog',
+      width: '36vw',
       data: {}
     });
 
