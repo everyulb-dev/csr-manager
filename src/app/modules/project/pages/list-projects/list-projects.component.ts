@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import {MatDialog} from '@angular/material';
+import {MatDialog, MatTableDataSource} from '@angular/material';
 import { AddProjectDialogComponent } from '../../components/add-project-dialog/add-project-dialog.component';
 
 
@@ -10,64 +10,6 @@ import { AddProjectDialogComponent } from '../../components/add-project-dialog/a
   encapsulation: ViewEncapsulation.None
 })
 export class ListProjectsComponent implements OnInit {
-
-  projects: Project[] = [
-    {
-      id: 1,
-      isCompleted: false,
-      name: 'Project Name',
-      focusArea: 'focus area',
-      verticle: 'verticle',
-      region: 'region',    
-      stage: 'execution',        
-    },
-    {
-      id: 2,
-      isCompleted: false,
-      name: 'Project Name',
-      focusArea: 'focus area',
-      verticle: 'verticle',
-      region: 'region',    
-      stage: 'impact analysis',        
-    },
-    {
-      id: 3,
-      isCompleted: false,
-      name: 'Project Name',
-      focusArea: 'focus area',
-      verticle: 'verticle',
-      region: 'region',    
-      stage: 'planning',        
-    },
-    {
-      id: 4,
-      isCompleted: false,
-      name: 'Project Name',
-      focusArea: 'focus area',
-      verticle: 'verticle',
-      region: 'region',    
-      stage: 'execution',        
-    },
-    {
-      id: 5,
-      isCompleted: false,
-      name: 'Project Name',
-      focusArea: 'focus area',
-      verticle: 'verticle',
-      region: 'region',    
-      stage: 'impact analysis',        
-    },
-    {
-      id: 6,
-      isCompleted: false,
-      name: 'Project Name',
-      focusArea: 'focus area',
-      verticle: 'verticle',
-      region: 'region',    
-      stage: 'planning',        
-    },
-  ];
-
   tableColumns: string[] = [
     'name',
     'focusArea',
@@ -75,7 +17,7 @@ export class ListProjectsComponent implements OnInit {
     'region',
     'stage'
   ]
-
+  dataSource = new MatTableDataSource(ELEMENT_DATA);
   constructor( public dialog: MatDialog) { }
 
   ngOnInit() {
@@ -97,12 +39,15 @@ export class ListProjectsComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       console.log('Dialog Closed');
       console.log(result);
+      ELEMENT_DATA.push(result);
+      this.dataSource = new MatTableDataSource(ELEMENT_DATA);
+      console.log(this.dataSource);
     })
   }
 
 }
 
-interface Project {
+interface Element {
   id: number,
   isCompleted: boolean,
   name: string,
@@ -111,3 +56,60 @@ interface Project {
   verticle: string,
   region: string
 }
+
+const ELEMENT_DATA: Element[] = [
+  {
+    id: 1,
+    isCompleted: false,
+    name: 'Project Name',
+    focusArea: 'focus area',
+    verticle: 'verticle',
+    region: 'region',    
+    stage: 'execution',        
+  },
+  {
+    id: 2,
+    isCompleted: false,
+    name: 'Project Name',
+    focusArea: 'focus area',
+    verticle: 'verticle',
+    region: 'region',    
+    stage: 'impact analysis',        
+  },
+  {
+    id: 3,
+    isCompleted: false,
+    name: 'Project Name',
+    focusArea: 'focus area',
+    verticle: 'verticle',
+    region: 'region',    
+    stage: 'planning',        
+  },
+  {
+    id: 4,
+    isCompleted: false,
+    name: 'Project Name',
+    focusArea: 'focus area',
+    verticle: 'verticle',
+    region: 'region',    
+    stage: 'execution',        
+  },
+  {
+    id: 5,
+    isCompleted: false,
+    name: 'Project Name',
+    focusArea: 'focus area',
+    verticle: 'verticle',
+    region: 'region',    
+    stage: 'impact analysis',        
+  },
+  {
+    id: 6,
+    isCompleted: false,
+    name: 'Project Name',
+    focusArea: 'focus area',
+    verticle: 'verticle',
+    region: 'region',    
+    stage: 'planning',        
+  }
+];

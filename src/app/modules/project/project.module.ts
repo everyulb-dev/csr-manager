@@ -17,9 +17,10 @@ import { SummaryComponent } from './components/summary/summary.component';
 import { MatDatepickerModule,
   MatNativeDateModule,
   MatFormFieldModule,
-  MatInputModule } from '@angular/material';
+  MatInputModule} from '@angular/material';
 import { AddMilestoneDialogComponent } from './components/add-milestone-dialog/add-milestone-dialog.component';
 import { AddTeamMembersDialogComponent } from './components/add-team-members-dialog/add-team-members-dialog.component';
+import { ReactiveFormsModule, FormsModule } from '../../../../node_modules/@angular/forms';
 
 @NgModule({
   declarations: [ListProjectsComponent, AddProjectDialogComponent, ProjectSetupComponent, ProjectDetailsComponent, MilestonesComponent, TeamsComponent, SummaryComponent, AddMilestoneDialogComponent, AddTeamMembersDialogComponent],
@@ -35,7 +36,9 @@ import { AddTeamMembersDialogComponent } from './components/add-team-members-dia
     MatDatepickerModule,
     MatNativeDateModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [
     MatDatepickerModule
